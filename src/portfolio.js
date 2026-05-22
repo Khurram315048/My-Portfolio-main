@@ -1,8 +1,6 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation";
 
-//import myResume from "./assets/khuraamCV.pdf"; 
-
 const splashScreen = {
   enabled: true,
   animation: splashAnimation,
@@ -15,9 +13,9 @@ const illustration = {
 
 const greeting = {
   username: "Muhammad Khurram",
-  title: "Hi all, I'm Python Developer",
+  title: "Hi all, I'm Muhammad Khurram",
   subTitle: emoji(
-    "A passionate Python Developer 🚀 having an experience of building Web applications."
+    "Backend-focused Python Developer 🚀 with hands-on experience building production-grade Flask applications, RESTful APIs, and MySQL databases. Delivered a full-stack e-commerce platform and LMS from scratch."
   ),
   resumeLink: "/Muhammad_Khurram_CV_updated.pdf",
   displayGreeting: true
@@ -32,22 +30,30 @@ const socialMediaLinks = {
 };
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "Back-end focused Python Developer building scalable web services and APIs",
+  title: "What I Do",
+  subTitle:
+    "Backend-focused Python Developer building scalable web services, secure APIs, and full-stack applications",
   skills: [
-    emoji("⚡ Build RESTful APIs using Flask, FastAPI and Django"),
-    emoji("⚡ Design and optimize SQL databases and queries (SQLAlchemy, raw SQL)"),
-    emoji("⚡ Implement authentication, data validation and error handling"),
-    emoji("⚡ Integrate caching and realtime features (Redis, WebSocket)")
+    emoji("⚡ Build RESTful APIs and full-stack apps using Flask, FastAPI, and Django"),
+    emoji("⚡ Design and optimize MySQL schemas with 14+ table normalized structures"),
+    emoji("⚡ Implement secure authentication systems with bcrypt, session management & brute-force protection"),
+    emoji("⚡ Integrate AI models via Python APIs for NLP and data analysis tasks"),
+    emoji("⚡ Architect Blueprint-based modular Flask applications with role-based access control"),
+    emoji("⚡ Integrate caching and real-time features using Redis and WebSocket")
   ],
   softwareSkills: [
     { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
     { skillName: "Flask", fontAwesomeClassname: "fas fa-fire" },
     { skillName: "FastAPI", fontAwesomeClassname: "fas fa-bolt" },
     { skillName: "Django", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "SQL / SQLAlchemy", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "PHP", fontAwesomeClassname: "fab fa-php" },
+    { skillName: "C++", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "MySQL / SQLite", fontAwesomeClassname: "fas fa-database" },
     { skillName: "Redis", fontAwesomeClassname: "fas fa-server" },
+    { skillName: "REST APIs", fontAwesomeClassname: "fas fa-network-wired" },
     { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "Linux", fontAwesomeClassname: "fab fa-linux" },
+    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
     { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
     { skillName: "HTML/CSS", fontAwesomeClassname: "fab fa-html5" }
   ],
@@ -61,11 +67,11 @@ const educationInfo = {
       schoolName: "University of Southern Punjab",
       logo: require("./assets/images/uspLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "March 2023 – March 2027",
-      desc: "Completed a Bachelor's degree in Computer Science with a strong academic record (GPA: 3.7). Developed multiple projects in Python, Flask, SQL, and MERN stack technologies.",
+      duration: "July 2022 – July 2027",
+      desc: "Pursuing a Bachelor's degree in Computer Science with a strong academic record (GPA: 3.7). Relevant coursework includes Data Structures, Algorithms, Database Systems, OOP, Web Development, and Parallel & Distributed Computing.",
       descBullets: [
-        "Worked on academic projects including CRUD systems, task management apps, and LMS",
-        "Strengthened skills in Python, SQL, APIs, and modern web development"
+        "Built production-grade projects: e-commerce platform, LMS, secure auth system, and AI integration platform",
+        "Strengthened skills in Python, MySQL, REST APIs, Flask Blueprint architecture, and system design"
       ]
     },
     {
@@ -85,74 +91,102 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true,
   experience: [
-    { Stack: "Backend Development (Python, Flask, FastAPI, Django)", progressPercentage: "85%" },
-    { Stack: "Database & SQL (Queries, Models, CRUD)", progressPercentage: "80%" },
-    { Stack: "API Development (REST APIs, Data Validation)", progressPercentage: "75%" },
-    { Stack: "Frontend Basics (HTML, CSS, JS)", progressPercentage: "50%" },
-    { Stack: "Programming & Problem Solving", progressPercentage: "70%" }
+    { Stack: "Backend Development (Python, Flask, FastAPI, PHP)", progressPercentage: "85%" },
+    { Stack: "Database & SQL (MySQL, Schema Design, Query Optimization)", progressPercentage: "82%" },
+    { Stack: "API Development (REST APIs, Auth, RBAC, Validation)", progressPercentage: "80%" },
+    { Stack: "Security (Bcrypt, Session Mgmt, Brute-force Protection)", progressPercentage: "75%" },
+    { Stack: "Frontend Basics (HTML, CSS, JS, Jinja2)", progressPercentage: "55%" },
+    { Stack: "AI/ML Integration (Python APIs, Data Pipelines)", progressPercentage: "60%" }
   ],
   displayCodersrank: false
 };
 
-// ❗ FIXED NAME
 const workExperiences = {
   display: true,
   experience: [
+    {
+      role: "Self-Employed Backend Developer",
+      company: "Robusto Solutions",
+      companylogo: require("./assets/images/robustoLogo.png"),
+      date: "September 2024 – Present",
+      desc: "Architecting and delivering full-stack backend systems for real-world clients including e-commerce platforms, LMS, and secure authentication systems.",
+      descBullets: [
+        "Built a secure PHP authentication system with bcrypt hashing and brute-force protection — reducing security vulnerabilities by 95%",
+        "Integrated multiple AI models via Python APIs, developing NLP and data analysis pipelines",
+        "Designed and optimized MySQL schemas with proper indexing — improving query performance by 40%",
+        "Developed RESTful API endpoints for seamless frontend-backend communication with robust error handling"
+      ]
+    },
     {
       role: "Learning Management System (LMS) Developer",
       company: "Robusto Solutions",
       companylogo: require("./assets/images/robustoLogo.png"),
       date: "2025 – Present",
-      desc: "Developing a complete LMS using Flask and SQL with modules for course management, student progress tracking, and user handling.",
+      desc: "Developing a complete LMS using Flask and MySQL with role-based access control for students and instructors.",
       descBullets: [
-        "Designed and implemented FastAPI endpoints for smooth data interaction",
-        "Created database models and optimized SQL queries for performance",
-        "Implemented backend logic for assignments, users, and course workflows"
+        "Built RESTful APIs for student enrollment, course management, and assignment submission modules",
+        "Designed normalized relational MySQL schema to handle users, courses, modules, and progress tracking",
+        "Implemented secure session management and authentication middleware with RBAC"
       ]
     },
     {
-      role: "Backend Developer – CRUD Operations",
+      role: "Backend Developer – CRUD & Task Management",
       company: "Robusto Solutions",
       companylogo: require("./assets/images/robustoLogo.png"),
-      date: "2024 – 2024",
-      desc: "Built and deployed a fully functional CRUD backend application using Python, SQL, and Flask.",
+      date: "2023 – 2024",
+      desc: "Built and deployed fully functional backend applications using Python, Flask, and MySQL.",
       descBullets: [
-        "Built database schema and implemented all CRUD features",
-        "Handled data validation, form handling, and error management",
-        "Improved application reliability through optimized queries"
-      ]
-    },
-    {
-      role: "Backend Developer – Task Management System",
-      company: "Robusto Solutions",
-      companylogo: require("./assets/images/robustoLogo.png"),
-      date: "2023 – 2023",
-      desc: "Developed a Task Management System for managing tasks, users, and project workflows.",
-      descBullets: [
-        "Implemented backend logic using Python, Flask, and SQL",
-        "Developed REST API endpoints for tasks and users",
-        "Designed database structure and ensured secure data flow"
+        "Implemented all CRUD features with data validation, form handling, and error management",
+        "Developed REST API endpoints for task and user management workflows",
+        "Designed secure database structure ensuring data integrity and optimized queries"
       ]
     }
   ]
 };
 
-// ❗ FIXED NAME
 const openSource = {
   showGithubProfile: true,
   display: true
 };
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "Selected backend and full-stack projects",
+  title: "Projects",
+  subtitle: "Production-grade backend and full-stack projects",
   projects: [
     {
       image: require("./assets/images/lmsProject.png"),
-      projectName: "LMS - Learning Management System",
-      projectDesc: "A Learning Management System built with Flask, SQLAlchemy and FastAPI endpoints. Features user authentication, course & assignment management, progress tracking, and admin controls.",
+      projectName: "Hero Style — Full-Stack E-Commerce Platform",
+      projectDesc:
+        "A complete full-stack e-commerce platform for a watch and earbuds store built with Flask Blueprint architecture. Features a full Admin Dashboard with RBAC, product CRUD with image upload, order lifecycle management (cart → checkout → tracking → returns/cancellations), user portal with wishlist, reviews, and order history — all across a normalized 14-table MySQL schema.",
+      footerLink: [
+        { name: "Source Code", url: "https://github.com/Khurram315048" }
+      ]
+    },
+    {
+      image: require("./assets/images/lmsProject.png"),
+      projectName: "Learning Management System (LMS)",
+      projectDesc:
+        "A full-featured LMS platform built with Python, Flask, and MySQL. Includes student enrollment, course management, assignment submission, and instructor dashboards with role-based access control and secure session management.",
       footerLink: [
         { name: "Source Code", url: "https://github.com/Khurram315048/LMS-PythonDevelopment" }
+      ]
+    },
+    {
+      image: require("./assets/images/achievementPlaceholder.png"),
+      projectName: "Secure Authentication System",
+      projectDesc:
+        "Production-ready PHP login system with bcrypt password encryption, session management, rate limiting, and account lockout mechanisms to prevent brute-force attacks. Reduced security vulnerabilities by 95%.",
+      footerLink: [
+        { name: "GitHub", url: "https://github.com/Khurram315048" }
+      ]
+    },
+    {
+      image: require("./assets/images/achievementPlaceholder.png"),
+      projectName: "AI Model Integration Platform",
+      projectDesc:
+        "Python-based platform for integrating and testing multiple AI models through a unified API interface. Includes data preprocessing pipelines and an interactive dashboard for model performance monitoring and result visualization.",
+      footerLink: [
+        { name: "GitHub", url: "https://github.com/Khurram315048" }
       ]
     }
   ],
@@ -160,19 +194,37 @@ const bigProjects = {
 };
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle: "Selected certificates and accomplishments",
+  title: emoji("Achievements & Certifications 🏆"),
+  subtitle: "Selected accomplishments and self-directed milestones",
   achievementsCards: [
     {
-      title: "Backend Development Projects",
-      subtitle: "Built and maintained scalable backend systems using Flask, FastAPI and SQL.",
+      title: "Hero Style — Production E-Commerce Platform",
+      subtitle:
+        "Built and deployed a multi-module full-stack e-commerce app with a complete admin control panel, user portal, and 14-table MySQL schema — demonstrating end-to-end full-stack development capability.",
       image: require("./assets/images/achievementPlaceholder.png"),
-      imageAlt: "Project Image",
+      imageAlt: "Hero Style Project",
       footerLink: [
-        { name: "LMS Project", url: "https://github.com/Khurram315048/LMS-PythonDevelopment" }
+        { name: "GitHub", url: "https://github.com/Khurram315048" }
       ]
+    },
+    {
+      title: "LMS Platform Development",
+      subtitle:
+        "Developed a full-featured Learning Management System with RBAC, course management, assignment workflows, and secure authentication using Flask and MySQL.",
+      image: require("./assets/images/achievementPlaceholder.png"),
+      imageAlt: "LMS Project",
+      footerLink: [
+        { name: "Source Code", url: "https://github.com/Khurram315048/LMS-PythonDevelopment" }
+      ]
+    },
+    {
+      title: "Security Engineering",
+      subtitle:
+        "Architected a secure PHP authentication system with bcrypt hashing, brute-force protection, and session management — achieving a 95% reduction in potential security vulnerabilities.",
+      image: require("./assets/images/achievementPlaceholder.png"),
+      imageAlt: "Security Achievement",
+      footerLink: []
     }
-   
   ],
   display: true
 };
@@ -194,7 +246,7 @@ const talkSection = {
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: `I don't currently publish a podcast.`,
+  subtitle: "I don't currently publish a podcast.",
   podcast: [],
   display: false
 };
@@ -207,12 +259,12 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3150484043",
+  subtitle:
+    "Want to discuss a project or just say hi? My inbox is open for all.",
+  number: "+92-315-0484043",
   email_address: "saleemkhurram420@gmail.com"
 };
 
-// ❗ FIXED NAME
 const twitterDetails = {
   userName: "",
   display: false
@@ -228,15 +280,15 @@ export {
   skillsSection,
   educationInfo,
   techStack,
-  workExperiences,   // fixed
-  openSource,        // fixed
+  workExperiences,
+  openSource,
   bigProjects,
   achievementSection,
   blogSection,
   talkSection,
   podcastSection,
   contactInfo,
-  twitterDetails,    // fixed
+  twitterDetails,
   isHireable,
   resumeSection
 };
